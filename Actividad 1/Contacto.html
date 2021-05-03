@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body id="contenedor">
+
+    <header id="header">
+        <!-- Encabezado -->
+        <h1 class="titulo">Aprende Programación Web</h1>
+    </header>
+    <!-- Menu principal -->
+    <div >
+        <nav class="navegacion-principal">
+            <a href=Home.html>Home</a>
+            <a href="#">Noticias</a>
+            <a href=Nosotros.html>Nosotros</a>
+            <a href="#">Publicaciones</a>
+            <a href=Cursos.html>Cursos</a>
+            <a href="#">Localización</a>
+            <a href=Contacto.html>Contacto</a>
+        </nav>
+    </div>
+
+
+    <!-- Contenido Contacto -->
+
+    <main>
+
+
+
+
+        <img src="imagenes/contacto.jpg" alt="contacto" class="imagen-esponsive imagen-contacto">
+
+        <h3 class="contacto">Déjenos aquí sus datos</h3>
+        <div class="cuerpo-contacto contenedor">
+            <fieldset>
+                <form class="formulario">
+
+                    <fieldset>
+
+                        <legend>Información Personal</legend>
+
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" title="Introduzca su nombre" autofocus>
+
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" title="Introduzca sus apellidos">
+
+
+                        <label for="dni">DNI</label>
+                        <input type="text" name="dni" placeholder="12345678E" pattern="[0-9]{8}[A-Za-z]{1}"
+                            maxlength="9" title="Debe poner 8 números y una letra" />
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="aprendeprogramacionweb@gmail.com"
+                            pattern="[0-9][A-Za-z][@][.com]" title="Introduzca su direccion de correo">
+
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" placeholder="987654321" pattern="[0-9]{9}">
+
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Intereses Personales</legend>
+                        <label>Inquietudes:</label>
+                        <select name="interes">
+                            <option value="" disable selected>--Seleccione--</option>
+                            <option value="Front End">Front End</option>
+                            <option value="Back End">Back End</option>
+                        </select>
+                        <div class="experiencia">
+                            <label for="experiencia">Experiencia laboral</label> <br>
+                            <input type="radio" name="experiencia" value="0">Sin experiencia <br>
+                            <input type="radio" name="experiencia" value="1">De 0 a 5 años <br>
+                            <input type="radio" name="experiendia" value="2">De 6 a 10 años <br>
+                            <input type="radio" name="experiencia" value="3">De 11 a 15 años <br>
+                            <input type="radio" name="experiencia" value="4">Más de 15 años <br><br>
+                        </div>
+
+
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Observaciones</legend>
+                        <div>
+                            <textarea placeholder="Puedes escribir aquí tus observaciones..."></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contacto</legend>
+                        <p>¿Cómo desea ser contactado?</p>
+
+                        <div class="forma-contacto">
+                            <label for="telefono">Teléfono</label>
+                            <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                            <label for="correo">E-mail</label>
+                            <input type="radio" name="contacto" value="correo" id="correo">
+                        </div>
+                    </fieldset>
+                    <br>
+            </fieldset>
+            <br>
+            <div class="checkbox">
+                <label for="condicones">Acepto los terminos y condiciones</label>
+                <input type="checkbox" class="btn_select" value="condiciones">
+            </div>
+            <input type="submit" value="Enviar" class="boton-enviar" />
+
+            </form>
+        </div>
+
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <footer class="site-footer">
+            <div class="contenedor-footer">
+                <nav class="navegacion-footer">
+                    <a href=Home.html>Home</a>
+                    <a href=Nosotros.html>Nosotros</a>
+                    <a href=Cursos.html>Cursos</a>
+                    <a href=Contacto.html>Contacto</a>
+                </nav>
+                <p class="copyright">Todos los Derechos Reservados 2021 &copy;</p>
+            </div>
+
+        </footer>
+
+
+</body>
+
+</html>
